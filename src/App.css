@@ -1,38 +1,346 @@
-.App {
+html {
+  scroll-behavior: smooth;
+  background-image: linear-gradient(#fccb90, #fecfef);
+}
+
+
+.container {
+  font-family: B612;
+  color: #2f2f2f;
+}
+/* All sections */
+
+.welcomeContainer {
+  height: 1000px;
+}
+.welcome {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: white;
+  animation: fadeInAnimation ease 3s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+
+.enterButton {
+  align-items: center;
   text-align: center;
+  word-break: center;
+  animation: fadeInAnimationDelay ease 3.5s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+#enter {
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Home CSS */
+.home {
+  height: 1000px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+   } 
+}
+
+@keyframes fadeInAnimationDelay { 
+  0% { 
+      opacity: 0; 
+  } 
+  66% { 
+    opacity:0; 
+  }
+  100% { 
+      opacity: 1; 
+   } 
+}
+
+.profile {
+  border-radius: 50%;
+  border: 1px solid;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  box-shadow: 10px;
+  animation: fadeInAnimation ease 3s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+
+img {
+  height: auto
+}
+
+
+.portfolio {
+  height: 1200px;
+
+}
+.company {
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+
+#header {
+  position: fixed;
+  width: 100%;
+  height: 75px;
+}
+
+#nav {
+  background-color: transparent;
+  border: 0px;
+  margin-left: 20px;
+  margin-top: 12.5px;
+  outline:none;
+}
+
+#x {
+  width: 50px;
+  border: 0px;
+  border: none;
+  outline:none;
+  background-color:transparent;
+}
+
+#close {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+
+/* Education */
+.education {
+  height: 800px;
+  margin-top: 200px;
+}
+
+/* SideBar */
+.navLinks {
+  margin-top: 30px;
+}
+
+.sidebar {
+  z-index: 1;
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f68084;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2f2f2f;
+  display: block;
+  transition: 0.5s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  background-color: #c86fc9;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* main */
+#main {
+  transition: margin-left 0.5s;
+}
+
+
+h1 {
+  text-align: center;
+  
+}
+
+.container {
+}
+
+
+/* Contact Me Section */
+#contact {
+  height: 800px;
+}
+/* Flip Cards */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+  margin-bottom: 100px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 120%;
+  height: 400px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 60px 60px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  background-color: #89bef0;
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.flip-card-front {  
+  color: black;
+}
+
+.flip-card-back {
+  color: black;
+  transform: rotateY(180deg);
+}
+.row {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.col {
+  width: 20%;
+  margin: 30px;
+  float: left;
+  padding: 0 10px;
+  align-self: center;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .col {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
 }
+.section {
+  padding-left: 150px;
+  padding-top: 20px;
+  padding-right: 150px;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.but {
+  size: 100px;
+}
+
+h5 {
+  margin-top: 600px;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.socialIcon{
+  margin: 10px;
+  display: inline-block;
+  margin-left: 80px;
+  margin-right: 80px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.socialIcon:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+#icons {
+  margin-bottom: 50px;
 }
