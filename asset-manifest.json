@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/jimmyren23/MyPortfolio.git/static/css/main.82d1a51f.chunk.css",
+    "main.js": "/jimmyren23/MyPortfolio.git/static/js/main.68c568c2.chunk.js",
+    "main.js.map": "/jimmyren23/MyPortfolio.git/static/js/main.68c568c2.chunk.js.map",
+    "runtime-main.js": "/jimmyren23/MyPortfolio.git/static/js/runtime-main.8e00f696.js",
+    "runtime-main.js.map": "/jimmyren23/MyPortfolio.git/static/js/runtime-main.8e00f696.js.map",
+    "static/js/2.05778771.chunk.js": "/jimmyren23/MyPortfolio.git/static/js/2.05778771.chunk.js",
+    "static/js/2.05778771.chunk.js.map": "/jimmyren23/MyPortfolio.git/static/js/2.05778771.chunk.js.map",
+    "index.html": "/jimmyren23/MyPortfolio.git/index.html",
+    "precache-manifest.41d1ede0864bf677bc1aa22fa2dcff6b.js": "/jimmyren23/MyPortfolio.git/precache-manifest.41d1ede0864bf677bc1aa22fa2dcff6b.js",
+    "service-worker.js": "/jimmyren23/MyPortfolio.git/service-worker.js",
+    "static/css/main.82d1a51f.chunk.css.map": "/jimmyren23/MyPortfolio.git/static/css/main.82d1a51f.chunk.css.map",
+    "static/js/2.05778771.chunk.js.LICENSE.txt": "/jimmyren23/MyPortfolio.git/static/js/2.05778771.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/jimmyren23/MyPortfolio.git/static/media/B612-Regular.e8ed14e1.ttf",
+    "static/media/emailfilled.svg": "/jimmyren23/MyPortfolio.git/static/media/emailfilled.b93d660a.svg",
+    "static/media/facebookfilled.svg": "/jimmyren23/MyPortfolio.git/static/media/facebookfilled.210cfb81.svg",
+    "static/media/gaia.png": "/jimmyren23/MyPortfolio.git/static/media/gaia.3775ef60.png",
+    "static/media/githubfilled.svg": "/jimmyren23/MyPortfolio.git/static/media/githubfilled.17156bc7.svg",
+    "static/media/instagramfilled.svg": "/jimmyren23/MyPortfolio.git/static/media/instagramfilled.be7b9817.svg",
+    "static/media/linkedinfilled.svg": "/jimmyren23/MyPortfolio.git/static/media/linkedinfilled.1ee6dbdf.svg",
+    "static/media/menu.svg": "/jimmyren23/MyPortfolio.git/static/media/menu.5d5986f0.svg",
+    "static/media/northwestern.png": "/jimmyren23/MyPortfolio.git/static/media/northwestern.61962838.png",
+    "static/media/profile.jpg": "/jimmyren23/MyPortfolio.git/static/media/profile.93b20f90.jpg",
+    "static/media/upenn.png": "/jimmyren23/MyPortfolio.git/static/media/upenn.3a405006.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e00f696.js",
+    "static/js/2.05778771.chunk.js",
+    "static/css/main.82d1a51f.chunk.css",
+    "static/js/main.68c568c2.chunk.js"
+  ]
+}
