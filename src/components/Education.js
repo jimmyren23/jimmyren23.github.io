@@ -5,7 +5,7 @@ class Education extends Component {
     render() {
         return (
             <div className="education">
-                <h1> Education </h1>
+                <h1 style={{borderBottom: "2px solid"}}> Education </h1>
                 <h3> University of Pennsylvania </h3>
                 <p> School of Engineering & Applied Science (Philadelphia, PA)	
                 <p> August 2019 - May 2023</p>

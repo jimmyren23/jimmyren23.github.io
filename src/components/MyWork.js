@@ -9,7 +9,7 @@ class MyWork extends Component {
     render() {
         return (
             <div className="portfolio">
-                <h1> My Portfolio </h1>
+                <h1 style={{borderBottom: "2px solid"}}> My Portfolio </h1>
                 <div className="row">
                     <div className="col">
                         <InfoCard company="Gaia Wearables" position="Software Engineering Intern" location="Chicago, IL" years="May 2020-August 2020" 

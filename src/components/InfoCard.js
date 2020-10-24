@@ -39,7 +39,7 @@ class InfoCard extends Component {
                         ?   <>
                                 <ul>
                                     {result.map((value, index) => {
-                                        return <div> <li key={index}>{value}</li> <br/> </div>
+                                        return <div> <li key={index} style={{padding:"5px"}}>{value}</li> <br/> </div>
                                     })}
                                 </ul>
                             </>
