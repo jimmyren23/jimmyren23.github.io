@@ -10,7 +10,9 @@ class SocialIcon extends Component {
 
         return (
             <div className="socialIcon" style={{display: "inline-block", marginLeft: "80px", marginRight: "80px"}}>
-                <a href={this.props.link}> <img src={this.props.image} alt="Icon"/> </a>
+                <div className="icon-background">
+                    <a href={this.props.link}> <img src={this.props.image} alt="Icon" className="icon"/> </a>
+                </div>
             </div>
         );
     }

@@ -8,6 +8,8 @@ import Contact from './components/Contact.js'
 import MyWork from './components/MyWork.js'
 import Education from './components/Education.js'
 import Welcome from './components/Welcome.js'
+import ProjectCard from './components/ProjectCard.js'
+import Projects from './components/Projects.js'
 
 function FadeInSection(props) {
   const [isVisible, setVisible] = useState(true);
@@ -38,55 +40,61 @@ function App() {
     setToggle(!toggle);
     if(toggle) {
       document.getElementById("mySideBar").style.width = "280px";
-      document.getElementById("sections").style.opacity = "0.5";
+      document.getElementById("all-sections").style.opacity = "0.5";
     } else {
       document.getElementById("mySideBar").style.width = "0px";
-      document.getElementById("sections").style.opacity = "1";
+      document.getElementById("all-sections").style.opacity = "1";
     }
   }
   return (
     <div className="container">
-      <div id="main">
-        <div id="navigation">
-          <div className="sidebar" id="mySideBar">
-            <div id="close">
-              {toggle ? <button onClick={navToggle} id="x"> <img src={X} alt="menu"/> </button> 
-                      : <button onClick={navToggle} id="x"> <img src={X} alt="menu"/> </button>}
-            </div>
+      <div id="navigation">
+        <div className="sidebar" id="mySideBar">
+          <div id="close">
+            <button onClick={navToggle} id="x"> <img src={X} alt="menu"/> </button>
             <SideNav/>
           </div>
-          <div id="header">
-            {toggle ? <button onClick={navToggle} id="nav"><img src={Menu} alt="menu"/> </button> 
-                    : <button onClick={navToggle} id="nav"><img src={Menu} alt="menu"/> </button>
-            }
-          </div>
         </div>
-        <div id="sections">
-          <div className="section" id="welcome">
-            <FadeInSection>
-              <Welcome />
-            </FadeInSection>
-          </div>
-          <div className="section" id="home">
-            <FadeInSection>
-              <Home />
-            </FadeInSection>
-          </div>
-          <div className="section" id="portfolio">
-            <FadeInSection>
-              <MyWork />
-            </FadeInSection>
-          </div>
-          <div className="section" id="education">
-            <FadeInSection>
-              <Education />
-            </FadeInSection>
-          </div>
-          <div className="section" id="contact">
-            <FadeInSection>
-              <Contact />
-            </FadeInSection>
-          </div>
+        <div id="header">
+            <button onClick={navToggle}><img src={Menu} alt="menu"/> </button>
+        </div>
+      </div>
+    
+      <div id="all-sections">
+        <div className="section1" id="welcome">
+          <FadeInSection>
+            <Welcome />
+          </FadeInSection>
+        </div>
+        <div className="title" id="home-anchor">
+            <h2> My Name is Jimmy Ren</h2>
+        </div>
+        <div className="section2" id="home">
+          <FadeInSection>
+            <Home />
+          </FadeInSection>
+        </div>
+        <div className="title" id="portfolio-anchor">
+            <h2> Work Experience </h2>
+        </div>      
+        <div className="section1" id="all-projects">
+          <FadeInSection>
+            <Projects />
+          </FadeInSection>
+        </div>
+        <div className="title" id="education-anchor">
+            <h2> Education </h2>
+        </div>   
+        <div className="section2" id="education">
+          <FadeInSection>
+            <Education />
+          </FadeInSection>
+        </div>
+
+        <div className="section1" id="contact-anchor">
+          <FadeInSection>
+            <Contact />
+          </FadeInSection>
         </div>
       </div>
     </div>

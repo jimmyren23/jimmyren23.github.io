@@ -10,10 +10,11 @@ class Contact extends Component {
     render() {
         return (
             <div className="contact">
-                <h1 style={{borderBottom: "2px solid"}}> Contact Information </h1>
+                <h2> Contact </h2>
+                <p> Feel free to shoot me a message! </p>
                 <div id="icons" style={{alignItems:"center", display: "inline-block", alignSelf: "center", textAlign: "center", width: "100%"}}>
                     <Icon image={Git} link="https://github.com/jimmyren23" />
-                    <Icon image={Insta} link="instagram.com/jimmy.ren/" />
+                    <Icon image={Insta} link="https://instagram.com/jimmy.ren/" />
                     <Icon image={Facebook} link="https://www.facebook.com/jimmyren23/" />
                     <Icon image={Email} link="mailto:jimmyren@seas.upenn.edu" />
                     <Icon image={LinkedIn} link="https://www.linkedin.com/in/jim-ren" />
