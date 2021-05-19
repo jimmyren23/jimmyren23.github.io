@@ -18,35 +18,11 @@ class InfoCard extends Component {
             exists = false;
         } 
         return (
-            <div className="flip-card">
-                <div className="flip-card-inner">
-                    <div className="flip-card-front">
-                        {exists 
-                        ?   <>
-                            <div style={{height: "120px", padding: "10px"}}>
-                                <img src={this.props.image} alt="Place" className="company"/>
-                            </div>
-                            <h2 className="title"> {this.props.company} </h2>
-                            <p> Position: {this.props.position} </p>
-                            <p> Location: {this.props.location} </p>
-                            <p> Years Worked: {this.props.years} </p>
-                            </>
-                        :   <p> Adventure is out there!</p>
-                        }
-                    </div>
-                    <div class="flip-card-back">
-                        {exists 
-                        ?   <>
-                                <ul>
-                                    {result.map((value, index) => {
-                                        return <div> <li key={index} style={{padding:"5px"}}>{value}</li> <br/> </div>
-                                    })}
-                                </ul>
-                            </>
-                        :   <p> Adventure is out there!</p>
-                        }
-                    </div>
-                </div>
+            <div className="info-card">
+                <h1> {this.props.company} </h1>
+                <p> Position: {this.props.position} </p>
+                <p> Location: {this.props.location} </p>
+                <p> Years Worked: {this.props.years} </p>                
             </div>
         );
     }

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Arrow from "./images/upwardarrow.png";
-import Icon from "./socialIcon";
-import Git from "./images/githubfilled.svg";
-import Insta from "./images/instagramfilled.svg";
-import Facebook from "./images/facebookfilled.svg";
-import Email from "./images/emailfilled.svg";
-import LinkedIn from "./images/linkedinfilled.svg";
+import Arrow from "../images/upwardarrow.png";
+import Icon from "../socialIcon";
+import Git from "../images/githubfilled.svg";
+import Insta from "../images/instagramfilled.svg";
+import Facebook from "../images/facebookfilled.svg";
+import Email from "../images/emailfilled.svg";
+import LinkedIn from "../images/linkedinfilled.svg";
 class Contact extends Component {
     render() {
         return (

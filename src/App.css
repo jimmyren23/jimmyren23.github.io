@@ -1,135 +1,199 @@
-html {
-  scroll-behavior: smooth;
-}
 
-.title {
-  background-color: #e5e5e5;
-  padding: 75px 0px 10px 0px;
+#main-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.title h2{
-  width: 80%;
-}
-h1, h2, h3 {
-  text-align: center;
-}
-
-h2 {
-  border-bottom: 2px solid;
-  font-size: 50px;
-}
-
-button {
-  cursor:pointer;
-}
-.container {
-  font-family: B612;
-  color: black;
-  display: flex;
-}
-
-/* Navigation/header CSS*/
-#navigation {
-  height: 100%;
-  width: 0px;
-}
-
-#header {
-  position: fixed;
-  height: 100%;
-  border: 0px;
-  top: 0;
-  left: 0;
-  padding: 10px;
-}
-
-/* All sections */
-#all-sections {
-  width: 100%;  
-}
-
-.section1 {
-  display: flex;
-  place-content: center;
-  text-align: center;
-}
-
-.section2 {
-  display: flex;
-  place-content: center;
-  text-align: center;
-  background-color: #ffffff;
-}
-
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20vh);
-  visibility: hidden;
-  transition: opacity 1200ms ease-out, transform 600ms ease-out,
-    visibility 1200ms ease-out;
-  will-change: opacity, transform, visibility;
-}
-
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
-  width: 100%;
-}
-
-
-@keyframes fadeInAnimation { 
-  0% { 
-      opacity: 0; 
-  } 
-  100% { 
-      opacity: 1; 
-   } 
-}
-
-@keyframes fadeInAnimationDelay { 
-  0% { 
-      opacity: 0; 
-  } 
-  66% { 
-    opacity:0; 
-  }
-  100% { 
-      opacity: 1; 
-   } 
-}
-/* Welcome Container CSS*/
-#welcome {
-  background-image: url(./Philly.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: 1000px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-.welcomeContainer {
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  flex: 1;
   flex-direction: column;
 }
 
-.welcome {
-  flex: 50%;
-  align-items: center;
-  font-size: 100px;
-  color: white;
-  animation: fadeInAnimation ease 3s; 
-  animation-iteration-count: 1; 
-  animation-fill-mode: forwards; 
-  text-shadow: 1px 1px black;
+
+/* Welcome Section CSS*/
+#welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
 }
 
+#welcome-container h1 {
+  font-size: 6em;
+  margin-left: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 4em;
+}
+
+/* Home Section CSS */
+#home {
+  display: flex;
+  flex-direction: column;
+}
+
+#profile-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#profile-image-container h1 {
+  font-size: 4em;
+}
+
+#profile-image {
+  border-radius: 30em;
+  height: 25em;
+  border-width: 0.2em;
+  border-style: solid;
+  margin-top: 10em;
+}
+
+#profile-image:hover {
+  opacity: 0.4
+}
+
+#profile-facts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+#profile-facts p {
+  padding-left: 2em;
+  padding-right: 2em;
+  flex: 3em;
+  font-size: 2em;
+}
+
+/* Education CSS 
+/* #school-circle button {
+  border-radius: 200em;
+  height: 30em;
+  width: 30em;
+  margin-left: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: blue;
+  animation: example 4s infinite ease;
+}
+@keyframes example {
+  0%   {background-color: blue;}
+  50%  {background-color: red; transform: translate(0em, -2em);};
+  100% {background-color: blue;}
+}
+
+#school-circle2 button {
+  border-radius: 200em;
+  height: 30em;
+  width: 30em;
+  margin-left: 80em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkblue;
+  text-align: center;
+  animation: school2 4s infinite ease;
+}
+
+#school-circle2 button:active {
+  background-color: #3e8e41;
+  animation-play-state: paused;
+}
+
+@keyframes school2 {
+  0%   {background-color: darkblue;}
+  50%  {background-color: grey; transform: translate(0em, -2em);};
+  100% {background-color: darkblue;}
+} */
+
+.school {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+}
+
+.school h2 {
+  font-size: 3em;
+}
+
+.school h2, .school p {
+  margin-left: 5%;
+}
+
+
+.school-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10em;
+  margin-right: 15em;
+  width: 30em;
+  padding: 3em;
+  height: 20em;
+}
+
+
+#relevant-courses {
+  width: 77.5em;
+  height: 0px;
+  overflow-x: hidden;
+  transition: 1s;
+  text-align: left;
+}
+
+#relevant-courses h2 {
+  font-size: 30px;
+}
+
+#courseToggle {
+  padding: 1em;
+  background-color: transparent;
+  border-radius: 0.5em;
+  border: 0.2em solid;
+  outline:none;
+  transition: 0.3s;
+}
+
+#courseToggle:hover {
+  background-color: #62929e;
+}
+
+/* My Work Section CSS */
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio h1 {
+  font-size: 50px;
+}
+
+.row {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; 
+  align-items: center;
+}
+
+.col {
+  flex: 50%;
+  margin-top: 100px;
+  align-self: center;
+  height: 100%;
+  align-items: center;
+  display:flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+/*
 .enterButton {
   display: flex;
   align-items: center;
@@ -173,60 +237,9 @@ button {
   filter: brightness(0) invert(1);
 }
 
-/* Home CSS */
-#home {
-  display: flex;
-  min-height: 1000px;
-  justify-content: center;
-  align-items: center;
-}
-.home {
-  display: flex;
-  flex-direction: column;
-}
-
-.home h2 {
-  font-size: 80px;
-}
-
-.home p{
-  font-size: 33px;
-}
-.profile{
-  display: flex;
-}
-
-.profile-image-container {
-  flex: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-}
-
-.profile-image {
-  border: 5px solid;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 10px;
-  transition: 0.3s;
-  width: 80%;
-}
-
-.profile-image:hover {
-  opacity: 0.4
-}
-.profile-facts {
-  justify-content: center;
-  align-items: center;
-  flex: 50%;
-  text-align: left;
-  padding: 20px;
-  margin: 10px;
-}
 
 
-
+*/
 
 /* Elements in Portfolio */
 
@@ -261,81 +274,7 @@ button {
 
 
 /* Education */
-#education h2{
-  width: 100%;
-}
-#education {
-  display: flex;
-}
 
-.education {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 100px 0px 100px 0px;
-}
-
-.School {
-  display: flex;
-  width: 70%;
-  margin: 20px;
-  text-align:left;
-}
-
-.school-image {
-  display: flex;
-  flex: 20%;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  
-}
-
-.school-image img {
-  max-height: 100px;
-}
-
-.school-details {
-  flex: 80%;
-  margin: 10px;
-  padding: 20px;
-}
-
-.school-details h2 {
-  font-size: 30px;
-}
-
-#relevant-courses {
-  width: 60%;
-  height: 0px;
-  overflow-x: hidden;
-  transition: 1s;
-}
-
-#relevant-courses ul,li {
-  text-align: left;
-}
-
-#relevant-courses h2 {
-  font-size: 30px;
-}
-
-#courseToggle {
-  padding: 10px;
-  background-color: transparent;
-  border-radius: 8px;
-  border: 1px solid;
-  outline:none;
-  transition: 0.3s;
-}
-
-#courseToggle:hover {
-  padding: 10px;
-  background-color: #62929e;
-  border-radius: 8px;
-  border: 1px solid;
-  outline:none;
-}
 
 
 /* SideBar */
@@ -432,22 +371,6 @@ button {
   transform: rotateY(180deg);
 }
 
-.row {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row; 
-}
-
-.col {
-  flex: 50%;
-  margin-top: 100px;
-  align-self: center;
-  height: 100%;
-  align-items: center;
-  display:flex;
-  justify-content: center;
-}
 
 .but {
   size: 100px;
@@ -459,7 +382,7 @@ h5 {
   color: white;
 }
 /* Contact Me Section */
-#contact {
+#contact-anchor{
   background-color: #62929e;
 }
 
@@ -550,9 +473,9 @@ h5 {
   justify-content: space-between;
   margin: 0px 0px 0px 0px;
   transition: 0.5s;
-  border-radius: 15px;
+  border-radius: 25px;
   border: 1px solid rgba(0,0,0,0.2);
-  padding: 20px;
+  padding: 40px;
   min-height: 400px;
 }
 
@@ -589,6 +512,7 @@ h5 {
 .project-details h2 {
   text-align: center;
   font-size: 30px;
+  border-bottom: 2px solid;
 }
 
 .project-image img {
