@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
 
 class InfoCard extends Component {
-        constructor(props) {
-        super(props);
-        this.company = "Company"
-        this.position = "Position"
-        this.location = "Hello"
-        this.years = "Years"
-        this.description = "Worked on Bio. Worked on Physics"
-        this.image = null;
-    }
     render() {
         var description = String(this.props.description)
-        var result = description.split(",");
-        let exists = true;
-        if(this.props.company == "unknown") {
-            exists = false;
-        } 
+        var result = description.split(".");
+        const sentences = result.map(x => 
+            <> 
+                <p> {x + "."} </p> 
+                <br /> 
+            </>);
+
         return (
-            <div className="info-card">
-                <h1> {this.props.company} </h1>
-                <p> Position: {this.props.position} </p>
-                <p> Location: {this.props.location} </p>
-                <p> Years Worked: {this.props.years} </p>                
+            <div className="info-card-container" style={{backgroundColor: this.props.color}}>
+                <div className="info-card-text">
+                    <div className="info-card-header"> 
+                        <p> <b>{this.props.company}</b> </p>
+                        <p> {this.props.position} </p>
+                    </div>
+                    <div className="subtitle">
+                        <p> {this.props.years} </p>     
+                    </div>         
+                    <div className="details">
+                        {sentences}
+                    </div>
+                </div>
             </div>
         );
     }

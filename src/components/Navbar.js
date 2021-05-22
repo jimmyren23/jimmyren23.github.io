@@ -1,13 +1,34 @@
 
-// import React, { Component } from 'react';
-// import Navbar from 'react-bootstrap/Navbar'
-// class NewNavbar extends Component {
+import React, {Component} from 'react';
+import { Link } from "react-scroll";
+
+class Navbar extends Component {
      
-//     render() {
-//         return (
+    render() {
+        return (
+            <div id="navbar">
+                <div id="nav-items">
+                    <NavItem text="About" destination="profile" />
+                    <NavItem text="Experience" destination="portfolio" />
+                    <NavItem text="Projects" destination="all-project-cards" />
+                </div>
+            </div>
+        );
+    }
+}
 
-//         );
-//     }
-// }
-
-// export default NewNavbar;
+class NavItem extends Component {
+    render() {
+        return(
+            <Link className="navbtn"
+                activeClass="active"
+                to={this.props.destination}
+                spy={true}
+                smooth={true}
+                duration={1000}>
+                {this.props.text}
+            </Link>
+        );
+    }
+}
+export default Navbar;
