@@ -600,4 +600,44 @@ html, body{
 }
 
 
+
 /* Poga Page CSS */
+.project-page {  
+  background-color: teal;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 5rem 5% 0rem 5%;
+  box-sizing: border-box;
+}
+.project-page h1, .project-page h2, .project-page h3{
+  padding: 0px;
+  margin: 0px;
+}
+.project-page h1 {
+  font-size: 5em;
+}
+.project-page h2 {
+  font-size: 2.5em;
+}
+
+.project-page p {
+  font-size: 1em;
+}
+.project-page-image {
+  display: flex;
+  flex: 0.3;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-page-image img {
+  width: 50%;
+  height: auto;
+}
+
+.project-page-overview, .project-page-motivation, .project-page-tech {
+  margin: 0rem 0rem 1.5rem 0rem;
+}
+

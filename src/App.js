@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/">
             <MainPage />
           </Route>
-          <Route path="/about">
+          <Route path="/poga">
             <Poga />
           </Route>
           <Route path="/dashboard">
