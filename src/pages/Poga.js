@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import Example from '../images/example.png'
 class Poga extends Component {
-
-
+    componentDidMount() {
+        document.body.classList.add("poga");
+        }
+    
+    componentWillUnmount() {
+        document.body.classList.remove("poga");
+    }
+        
     render() {
         return (
+            <html id="poga">
             <div className="project-page">
                 <div className="project-page-header">
                     <h1> Poga </h1>  
@@ -43,6 +50,7 @@ class Poga extends Component {
                     <hr/>
                 </div>
             </div>
+            </html>
         );
     }
 }

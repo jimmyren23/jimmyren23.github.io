@@ -602,8 +602,11 @@ html, body{
 
 
 /* Poga Page CSS */
-.project-page {  
+.poga {
   background-color: teal;
+}
+
+.project-page {  
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -694,3 +697,4 @@ html, body{
     margin: 1rem 0rem 1rem 0rem;
   }
 }
+

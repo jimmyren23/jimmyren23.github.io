@@ -8,7 +8,16 @@ import Contact from '../pages/sections/Contact.js'
 import Navbar from '../components/Navbar.js'
 
 class MainPage extends Component {
+    componentDidMount() {
+    document.body.classList.add("main");
+    }
+
+    componentWillUnmount() {
+    document.body.classList.remove("main");
+    }
+    
     render() {
+        document.body.classList.add("main")
         return (
             <div id="main-wrapper"> 
                 <Navbar />
