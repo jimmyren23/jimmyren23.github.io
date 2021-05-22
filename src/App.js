@@ -7,9 +7,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  useRouteMatch,
-  useParams
 } from "react-router-dom";
 
 
@@ -22,8 +19,8 @@ function App() {
           <Route exact path="/">
             <MainPage />
           </Route>
-          <Route path="/about">
-            <Poga />
+          <Route path="/poga">
+            {/* <Poga/> */}
           </Route>
           <Route path="/dashboard">
             {/* <Dashboard /> */}
