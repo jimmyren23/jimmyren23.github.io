@@ -9,7 +9,6 @@ class InfoCard extends Component {
                 <p> {x + "."} </p> 
                 <br /> 
             </>);
-
         return (
             <div className="info-card-container" style={{backgroundColor: this.props.color}}>
                 <div className="info-card-text">
