@@ -1,50 +1,26 @@
 import React, { Component } from 'react';
 
 class InfoCard extends Component {
-        constructor(props) {
-        super(props);
-        this.company = "Company"
-        this.position = "Position"
-        this.location = "Hello"
-        this.years = "Years"
-        this.description = "Worked on Bio. Worked on Physics"
-        this.image = null;
-    }
     render() {
         var description = String(this.props.description)
-        var result = description.split(",");
-        let exists = true;
-        if(this.props.company == "unknown") {
-            exists = false;
-        } 
+        var result = description.split(".");
+        const sentences = result.map(x => 
+            <> 
+                <p> {x + "."} </p> 
+                <br /> 
+            </>);
         return (
-            <div className="flip-card">
-                <div className="flip-card-inner">
-                    <div className="flip-card-front">
-                        {exists 
-                        ?   <>
-                            <div style={{height: "120px", padding: "10px"}}>
-                                <img src={this.props.image} alt="Place" className="company"/>
-                            </div>
-                            <h2 className="title"> {this.props.company} </h2>
-                            <p> Position: {this.props.position} </p>
-                            <p> Location: {this.props.location} </p>
-                            <p> Years Worked: {this.props.years} </p>
-                            </>
-                        :   <p> Adventure is out there!</p>
-                        }
+            <div className="info-card-container" style={{backgroundColor: this.props.color}}>
+                <div className="info-card-text">
+                    <div className="info-card-header"> 
+                        <h3> <b>{this.props.company}</b> </h3>
+                        <p> {this.props.position} </p>
                     </div>
-                    <div class="flip-card-back">
-                        {exists 
-                        ?   <>
-                                <ul>
-                                    {result.map((value, index) => {
-                                        return <div> <li key={index} style={{padding:"5px"}}>{value}</li> <br/> </div>
-                                    })}
-                                </ul>
-                            </>
-                        :   <p> Adventure is out there!</p>
-                        }
+                    <div className="subtitle">
+                        <p> {this.props.years} </p>     
+                    </div>         
+                    <div className="details">
+                        {sentences}
                     </div>
                 </div>
             </div>
