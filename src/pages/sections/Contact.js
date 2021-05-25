@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Icon from "../../components/Icons.js";
+
 import Git from "../../images/githubfilled.svg";
 import Insta from "../../images/instagramfilled.svg";
 import Facebook from "../../images/facebookfilled.svg";
