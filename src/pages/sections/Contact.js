@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Icon from "../../components/SocialIcon";
+import Icon from "../../components/SocialIcon.js";
 import Git from "../../images/githubfilled.svg";
 import Insta from "../../images/instagramfilled.svg";
 import Facebook from "../../images/facebookfilled.svg";
