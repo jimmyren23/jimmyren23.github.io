@@ -25,7 +25,7 @@ class NavItem extends Component {
                 to={this.props.destination}
                 spy={true}
                 smooth={true}
-                duration={1000}>
+                duration={500}>
                 {this.props.text}
             </Link>
         );

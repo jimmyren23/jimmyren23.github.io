@@ -14,7 +14,7 @@ class InfoCard extends Component {
             <div className="info-card-container" style={{backgroundColor: this.props.color}}>
                 <div className="info-card-text">
                     <div className="info-card-header"> 
-                        <p> <b>{this.props.company}</b> </p>
+                        <h3> <b>{this.props.company}</b> </h3>
                         <p> {this.props.position} </p>
                     </div>
                     <div className="subtitle">

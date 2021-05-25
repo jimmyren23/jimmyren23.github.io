@@ -18,9 +18,9 @@ class ProjectSection extends Component {
                     <img src={this.props.image} alt="project"/>
                 </div>
                 <div className={"project-details-" + this.props.side}>
-                    <h1> Project Name </h1>
-                    <h2> Subtitle</h2>
-                    <p> Brief project Description. Here is some random nonsense about the project.</p>
+                    <h2> {this.props.projectName}{this.props.optional} </h2>
+                    <h1> {this.props.subtitle}</h1>
+                    <p>  {this.props.description}</p>
                     <div className="project-link" style={{borderColor: this.props.fontColor}}> 
                         <Link to={this.props.project} className="learn-more">
                             <p> Learn More </p>

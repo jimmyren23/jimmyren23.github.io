@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&display=swap');
 html, body{
     width: 100%;
     margin: 0px;
@@ -5,6 +6,9 @@ html, body{
     overflow-x: hidden; 
 }
 
+p {
+  font-family: 'Lato', sans-serif;
+}
 #main-wrapper {
   display: flex;
   flex-direction: column;
@@ -16,10 +20,10 @@ html, body{
   flex-direction: row;
   align-items: left;
   padding-left: 5%;
-  padding-top: 150px;
-  padding-bottom: 325px;
+  padding-top: 12em;
+  padding-bottom: 20em;
   text-align: left;
-  background: #f1faee;
+  background: #e4e7eb;
 }
 
 #welcome-container h1 {
@@ -43,6 +47,7 @@ html, body{
 #profile {
   display: flex;
   flex-direction: column;
+  padding: 5em 0em 1em 0em;
 }
 
 #profile-image-container {
@@ -86,7 +91,7 @@ html, body{
 }
 #profile-facts p {
   flex: 0.3;
-  font-size: 2rem;
+  font-size: 1.8rem;
   transition: all .2s ease-in-out;
 }
 
@@ -162,10 +167,12 @@ html, body{
   margin: 50px;
 }
 
-#school-container-text p, .subtitle h3 {
+#school-container-text p, #school-container-text h3, .subtitle h3, .skill-container-header h3{
   padding: 0px;
   margin: 0px;
 }
+
+
 
 .school-container-header {
   font-size: 1.5em;
@@ -184,7 +191,7 @@ html, body{
 
 .skill-container-header {
   font-size: 1.5em;
-  margin: 50px 50px 20px 50px;
+  margin: 25px 50px 10px 50px;
 }
 
 #skill-container-text:hover {
@@ -232,10 +239,15 @@ html, body{
   
 }
 
-.info-card-text p {
+.info-card-text p, .info-card-text h3 {
   margin: 0px;
   padding: 0px;
 }
+
+.info-card-text h3 {
+  font-size: 1em;
+}
+
 .subtitle {
   font-size: 1em;
   padding-bottom: 1em;
@@ -374,20 +386,15 @@ html, body{
   padding: 10px 5% 10px 5%;
 }
 
-.project-details-right button:hover {
-     color:#000000;
-     background-color:#FFFFFF;
-}
-
 
 .project-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
+  height: 3em;
   transition: all .2s ease-in-out;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 0px 0px 0px 0px;
   cursor:pointer; 
   box-sizing: border-box;
 }
@@ -436,7 +443,8 @@ html, body{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 3px 10px 3px
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 800px) {
@@ -556,6 +564,7 @@ html, body{
   padding: 10px 0px 10px 0px;
   background-color: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 500px) {
@@ -569,11 +578,11 @@ html, body{
 }
 
 #navbar .active {
-  color: rgba(0, 0, 0, 0.3);
+  color: black;
 }
 
 #nav-items {
-  animation: 1.2s ease-out 0s 1 slideInFromLeft;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 @keyframes slideInFromLeft {
@@ -600,11 +609,7 @@ html, body{
 }
 
 
-
-/* Poga Page CSS */
-.poga {
-  background-color: teal;
-}
+/* Project Pages CSS */
 
 .project-page {  
   display: flex;
@@ -614,30 +619,40 @@ html, body{
   padding: 5rem 17.5% 5rem 17.5%;
   box-sizing: border-box;
 }
-.project-page h1, .project-page h2, .project-page p{
+.project-page h1, .project-page h2, .project-page p, .project-page a {
   padding: 0px;
   margin: 0px;
 }
 .project-page h1 {
-  font-size: 5em;
+  font-size: 4em;
+  /* display: inline-block;
+  padding-bottom: 10px;
+  border-bottom-style: solid; */
+
 }
 .project-page h2 {
   font-size: 2em;
 }
 
-.project-page p {
+.project-page p, .project-page a { 
   font-size: 1em;
   margin: 1rem;
 }
+
+.project-page-header {
+}
+
+
 .project-page-image {
   display: flex;
   flex: 0.3;
   align-items: center;
   justify-content: center;
+  margin: 2em 0em 2em 0em;
 }
 
 .project-page-image img {
-  width: 50%;
+  width: 80%;
   height: auto;
 }
 
@@ -651,7 +666,7 @@ html, body{
   flex: 1;
 }
 
-.project-page-overview, .project-page-motivation, .project-page-tech {
+.project-page-overview, .project-page-role, .project-page-motivation, .project-page-tech, .project-page-links{
   margin: 2rem 0rem 1.5rem 0rem;
   display: flex;
 }
@@ -663,8 +678,16 @@ html, body{
 }
 
 .project-section-para {
-  flex:0.7
+  flex:0.7;
+  width: 100%;
 }
+
+.project-page a {
+  display: inline-flex;
+  justify-content: left;
+  width: 100%;
+}
+
 
 @media screen and (max-width: 500px) {
   .project-page-header {
@@ -678,7 +701,7 @@ html, body{
     height: auto;
   }
 
-  .project-page-overview, .project-page-motivation, .project-page-tech {
+  .project-page-overview, .project-page-role, .project-page-motivation, .project-page-tech, .project-page-links {
     margin: 2rem 0rem 1.5rem 0rem;
     display: flex;
     flex-direction: column;
@@ -696,5 +719,60 @@ html, body{
     font-size: 1em;
     margin: 1rem 0rem 1rem 0rem;
   }
+  .project-page a {
+    margin: 1rem 0rem 1rem 0rem;
+  }
 }
 
+.project-page a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+}
+
+.project-section-para img {
+  height: 25px;
+}
+/* Poga Page CSS */
+.poga {
+  background-color: #b69df2;
+}
+
+/* listen-up Page CSS */
+.listen-up {
+  background-color: #63c841;
+}
+
+/* Election Page CSS */
+.tweets {
+  background-color: #1d3557;
+  color: white;
+}
+
+.tweets a {
+  color: white;
+}
+
+.tweets .project-section-para img {
+  filter: brightness(0) invert(1);
+}
+/* Recipe Page CSS */
+.recipe {
+  background-color: #f77c52;
+  color: white;
+}
+
+.recipe a {
+  color: white;
+}
+
+.recipe .project-section-para img {
+  filter: brightness(0) invert(1);
+}
+
+/* Insta Page CSS */
+.insta {
+  background-color: #A8DADC;
+}

@@ -16,7 +16,7 @@ class SkillBar extends Component {
                 <div id="education-container">
                     <div id="school-container-text">
                         <div className="school-container-header"> 
-                            <p> <b> Education </b> </p>
+                            <h3> <b> Education </b> </h3>
                             <p> University of Pennsylvania </p >
                         </div>
                         <div className="subtitle">
@@ -30,7 +30,7 @@ class SkillBar extends Component {
                 </div>
                 <hr/>
                 <div className="skill-container-header"> 
-                    <p> <b> Skills </b> </p>
+                    <h3> <b> Skills </b> </h3>
                 </div>
                 <div id="skill-container-text">
                     <div className="skill">

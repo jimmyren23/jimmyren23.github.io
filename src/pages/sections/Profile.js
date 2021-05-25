@@ -7,7 +7,7 @@ class Profile extends Component {
             <div id="profile">
                 <div id="profile-image-container">
                     <img src={ProfilePic} alt="Profle" id="profile-image"/>
-                    <h1> Jimmy Ren is... </h1>
+                    <h1> Hello! I'm Jimmy Ren</h1>
                 </div> 
                 <div id="profile-facts">
                     <div className="profile-para">
