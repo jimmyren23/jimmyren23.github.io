@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import ProjectSection from '../../components/ProjectSection.js'
+import ProjectSection from '../../../components/ProjectSection.js'
 
-import Poga from '../../images/PogaBoard.png'
-import Spotify from '../../images/SpotifyBoard.png'
-import Tweet from '../../images/TweetBoard.png'
-import Insta from '../../images/InstaBoard.png'
-import Recipe from '../../images/RecipeBoard.png'
+import Poga from '../../../images/PogaBoard.png'
+import Spotify from '../../../images/SpotifyBoard.png'
+import Tweet from '../../../images/TweetBoard.png'
+import Insta from '../../../images/InstaBoard.png'
+import Recipe from '../../../images/RecipeBoard.png'
 
 class MyWork extends Component {
     render() {

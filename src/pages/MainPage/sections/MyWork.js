@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import InfoCard from '../../components/InfoCard.js'
-import SkillBar from '../../components/SkillsBar.js'
+import InfoCard from '../../../components/InfoCard.js'
+import SkillBar from '../../../components/SkillsBar.js'
 
 class MyWork extends Component {    
     render() {

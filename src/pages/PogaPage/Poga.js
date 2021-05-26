@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PogaImage from '../images/PogaBoard.png'
-import Arrow from '../images/rightarrow.png';
+import PogaImage from '../../images/PogaBoard.png'
+import Arrow from '../../images/rightarrow.png';
 class Poga extends Component {
     componentDidMount() {
         document.body.classList.add("poga");

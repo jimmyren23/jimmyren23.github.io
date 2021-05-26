@@ -1,53 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&display=swap');
-html, body{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
 
+/* Global CSS */
 p {
   font-family: 'Lato', sans-serif;
-}
-#main-wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 /* Welcome Section CSS*/
 #welcome-container {
-  display: flex;
-  flex-direction: row;
-  align-items: left;
   padding-left: 5%;
   padding-top: 12em;
   padding-bottom: 20em;
-  text-align: left;
   background: #e4e7eb;
 }
 
 #welcome-container h1 {
-  flex: 0.7;
+  display: inline-block;
   font-size: 6rem;
   transition: all .2s ease-in-out;
-}
-
-@media screen and (max-width: 500px) {
-  #welcome-container h1{
-    font-size: 2rem;
-    flex: 1;
-  }
 }
 
 #welcome-container h1:hover {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 500px) {
+  #welcome-container h1{
+    font-size: 2rem;
+    flex: 1;  
+  }
+}
+
 /* Home Section CSS */
 #profile {
-  display: flex;
-  flex-direction: column;
-  padding: 5em 0em 1em 0em;
+  margin-top: 5em;
+  padding: 5em;
 }
 
 #profile-image-container {
@@ -57,38 +43,23 @@ p {
   justify-content: center;
 }
 
-#profile-image-container h1 {
-  font-size: 4rem;
-}
-
 #profile-image {
-  border-radius: 100em;
-  max-width: 100%;
-  height: 20vw;
+  border-radius: 300em;
+  max-width: 50vw;
+  max-height: 30vw;
   border-width: 0.2em;
   border-style: solid;
-  margin-top: 100px;
   transition: 0.15s ease-in-out
 }
-
 
 #profile-image:hover {
   opacity: 0.8
 }
 
-#profile-facts {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: left;
-  padding: 0px 5% 0px 5%;
+#profile-image-container h1 {
+  font-size: 4rem;
 }
 
-.profile-para {
-  flex: 0.3;
-  display: inline-block;
-}
 #profile-facts p {
   flex: 0.3;
   font-size: 1.8rem;
@@ -97,6 +68,19 @@ p {
 
 #profile-facts p:hover {
   transform: scale(1.1);
+}
+
+#profile-facts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.profile-para {
+  flex: 0.3;
+  display: inline-block;
 }
 
 @media screen and (max-width: 800px) {
@@ -126,12 +110,11 @@ p {
 #portfolio {
   display: flex;
   flex-direction: column;
-  margin: 200px 0px 200px 0px
+  padding: 2em 5% 2em 5%;
 }
 
 #work-header {
   font-size: 4rem;
-  padding: 0px 5% 50px 5%;
 }
 
 #all-info-cards {
@@ -140,7 +123,6 @@ p {
   grid-auto-rows: 1fr 1fr;
   grid-column-gap: 3em;
   grid-row-gap: 3em;
-  padding: 0px 3% 0px 3%;
   justify-content: center;
 }
 
@@ -164,7 +146,7 @@ p {
   flex: 1;
   flex-direction: column;
   transition: all .2s ease-in-out;
-  margin: 50px;
+  margin: 3em;
 }
 
 #school-container-text p, #school-container-text h3, .subtitle h3, .skill-container-header h3{
@@ -183,7 +165,7 @@ p {
 }
 
 #exp-detail-container hr {
-  margin: 0px 5% 0px 5%;
+  margin: 0px 2em 0px 2em;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom: 0px;
 }
@@ -191,7 +173,7 @@ p {
 
 .skill-container-header {
   font-size: 1.5em;
-  margin: 25px 50px 10px 50px;
+  margin: 1.2em 2em 0.5em 2em;
 }
 
 #skill-container-text:hover {
@@ -203,7 +185,7 @@ p {
   flex: 1;
   flex-direction: column;
   transition: all .2s ease-in-out;
-  margin: 0px 50px 30px 50px;
+  margin: 0px 2em 2em 3em;
 }
 
 
@@ -224,7 +206,7 @@ p {
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin: 50px;
+  margin: 2em;
   transition: all .2s ease-in-out;
 }
 
@@ -336,11 +318,6 @@ p {
 .project-details-left button {
   width: 30%;
   padding: 10px 5% 10px 5%;
-}
-
-.project-details-left button:hover {
-     color:#000000;
-     background-color:#FFFFFF;
 }
 
 .project-card-right {
@@ -758,6 +735,7 @@ p {
 .tweets .project-section-para img {
   filter: brightness(0) invert(1);
 }
+
 /* Recipe Page CSS */
 .recipe {
   background-color: #f77c52;

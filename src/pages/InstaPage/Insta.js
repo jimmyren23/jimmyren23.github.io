@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import InstaImage from '../images/InstaBoard.png'
-import Arrow from '../images/rightarrow.png';
+import InstaImage from '../../images/InstaBoard.png'
+import Arrow from '../../images/rightarrow.png';
+
+
 class Insta extends Component {
     componentDidMount() {
         document.body.classList.add("insta");

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Spotify from '../images/SpotifyBoard.png'
-import Arrow from '../images/rightarrow.png';
+import Spotify from '../../images/SpotifyBoard.png'
+import Arrow from '../../images/rightarrow.png';
+
 class Recipe extends Component {
     componentDidMount() {
         document.body.classList.add("listen-up");

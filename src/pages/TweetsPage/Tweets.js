@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import TweetImage from '../images/TweetBoard.png'
-import Arrow from '../images/rightarrow.png';
+import TweetImage from '../../images/TweetBoard.png'
+import Arrow from '../../images/rightarrow.png';
+
 class Tweets extends Component {
     componentDidMount() {
         document.body.classList.add("tweets");

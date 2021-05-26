@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import RecipeImage from '../images/RecipeBoard.png'
-import Arrow from '../images/rightarrow.png';
+import RecipeImage from '../../images/RecipeBoard.png'
+import Arrow from '../../images/rightarrow.png';
 
 class Recipe extends Component {
     componentDidMount() {

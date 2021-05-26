@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import MainPage from './pages/Main.js'
-import Poga from './pages/Poga.js'
-import Tweets from './pages/Tweets.js'
-import Insta from './pages/Insta.js'
-import Recipe from './pages/Recipe.js'
-import Spotify from './pages/Spotify.js'
+import MainPage from './pages/MainPage/Main.js'
+import Poga from './pages/PogaPage/Poga.js'
+import Tweets from './pages/TweetsPage/Tweets.js'
+import Insta from './pages/InstaPage/Insta.js'
+import Recipe from './pages/RecipePage/Recipe.js'
+import Spotify from './pages/SpotifyPage/Spotify.js'
 
 import {
   BrowserRouter as Router,
