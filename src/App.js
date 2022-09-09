@@ -9,36 +9,21 @@ import Spotify from './pages/Spotify.js'
 
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
 } from "react-router-dom";
-
-
-
 
 function App() {
   return (
       <Router>
-        <Switch>
-          <Route exact path="/">
-            <MainPage />
-          </Route>
-          <Route path="/poga">
-            <Poga />
-          </Route>
-          <Route path="/recipe">
-            <Recipe />
-          </Route>
-          <Route path="/spotify">
-            <Spotify />
-          </Route>
-          <Route path="/tweets">
-            <Tweets />
-          </Route>
-          <Route path="/insta">
-            <Insta />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<MainPage />} />
+          <Route path="/poga" element={<Poga />} />
+          <Route path="/recipe" element={<Recipe />} />
+          <Route path="/spotify" element={<Spotify />} />
+          <Route path="/tweets" element={<Tweets />} />
+          <Route path="/insta" element={<Insta />} />
+        </Routes>
       </Router>
 
   );
