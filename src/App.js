@@ -6,7 +6,7 @@ import Tweets from './pages/TweetsPage/Tweets.js'
 import Insta from './pages/InstaPage/Insta.js'
 import Recipe from './pages/RecipePage/Recipe.js'
 import Spotify from './pages/SpotifyPage/Spotify.js'
-import Spotify from './pages/PathCal/PathCal.js'
+import Spotify from './pages/MainPage/sections/PathCal.js'
 
 import {
   BrowserRouter as Router,
