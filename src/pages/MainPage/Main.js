@@ -7,6 +7,7 @@ import MyWork from './sections/MyWork.js'
 import Projects from './sections/Projects.js'
 import Contact from './sections/Contact.js'
 import Navbar from '../../components/Navbar.js'
+import PathCal from '../PathCal/PathCal.js'
 
 class MainPage extends Component {
     componentDidMount() {
@@ -27,6 +28,7 @@ class MainPage extends Component {
                 <MyWork />
                 <Projects />
                 <Contact />
+                <PathCal />
             </div>
         );
     }

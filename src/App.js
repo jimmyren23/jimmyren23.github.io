@@ -39,9 +39,6 @@ function App() {
           <Route path="/insta">
             <Insta />
           </Route>
-          <Route path="/privacy-policy-path-cal">
-            <PathCal />
-          </Route>
         </Switch>
       </Router>
 
