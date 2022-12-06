@@ -6,6 +6,7 @@ import Tweets from './pages/TweetsPage/Tweets.js'
 import Insta from './pages/InstaPage/Insta.js'
 import Recipe from './pages/RecipePage/Recipe.js'
 import Spotify from './pages/SpotifyPage/Spotify.js'
+import Spotify from './pages/PathCal/PathCal.js'
 
 import {
   BrowserRouter as Router,
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route path="/insta">
             <Insta />
+          </Route>
+          <Route path="/privacy-policy-path-cal">
+            <PathCal />
           </Route>
         </Switch>
       </Router>
