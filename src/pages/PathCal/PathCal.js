@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class PathCal extends Component {
     render() {
         return (
-            <div className="policy-page">
+            <div id="policy-page">
                 <h1> Path Cal</h1>
                 <p>
 This is a chrome extension that allows University of Pennsylvania students download their class schedules in an ICS format or upload it to their google calendar!
