@@ -23,12 +23,12 @@ class MainPage extends Component {
         return (
             <div id="main-wrapper"> 
                 <Navbar />
+                <PathCal />
                 <Welcome />
                 <Profile />
                 <MyWork />
                 <Projects />
                 <Contact />
-                <PathCal />
             </div>
         );
     }
