@@ -6,9 +6,10 @@ import Tweets from './pages/Tweets.js'
 import Insta from './pages/Insta.js'
 import Recipe from './pages/Recipe.js'
 import Spotify from './pages/Spotify.js'
+import PathCal from './pages/PathCal';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
@@ -18,6 +19,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<MainPage />} />
+          <Route exact path="/path-cal" element={<PathCal />} />
           <Route path="/poga" element={<Poga />} />
           <Route path="/recipe" element={<Recipe />} />
           <Route path="/spotify" element={<Spotify />} />

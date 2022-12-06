@@ -38,7 +38,7 @@ class MyWork extends Component {
                     <InfoCard 
                         color="#e4e7eb" 
                         company="Clara" 
-                        osition="Growth Hacker" 
+                        position="Growth Hacker" 
                         location="Remote" 
                         years="May 2020-August 2020" 
                         description="Created 5 new pricing options for startup accelerators to choose from with price comparisons.
