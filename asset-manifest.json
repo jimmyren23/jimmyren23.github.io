@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.98dda728.chunk.css",
+    "main.js": "/static/js/main.22f262ab.chunk.js",
+    "main.js.map": "/static/js/main.22f262ab.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+    "static/js/2.92922ed5.chunk.js": "/static/js/2.92922ed5.chunk.js",
+    "static/js/2.92922ed5.chunk.js.map": "/static/js/2.92922ed5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a6e2d6f5c6da81e60115f55a236c11e1.js": "/precache-manifest.a6e2d6f5c6da81e60115f55a236c11e1.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.98dda728.chunk.css.map": "/static/css/main.98dda728.chunk.css.map",
+    "static/js/2.92922ed5.chunk.js.LICENSE.txt": "/static/js/2.92922ed5.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/B612-Regular.e8ed14e1.ttf",
+    "static/media/InstaBoard.png": "/static/media/InstaBoard.3c25db96.png",
+    "static/media/PogaBoard.png": "/static/media/PogaBoard.bb1ee591.png",
+    "static/media/RecipeBoard.png": "/static/media/RecipeBoard.8990d9be.png",
+    "static/media/SpotifyBoard.png": "/static/media/SpotifyBoard.2a26bb60.png",
+    "static/media/TweetBoard.png": "/static/media/TweetBoard.d3d22a84.png",
+    "static/media/emailfilled.svg": "/static/media/emailfilled.b93d660a.svg",
+    "static/media/facebookfilled.svg": "/static/media/facebookfilled.210cfb81.svg",
+    "static/media/githubfilled.svg": "/static/media/githubfilled.17156bc7.svg",
+    "static/media/instagramfilled.svg": "/static/media/instagramfilled.be7b9817.svg",
+    "static/media/linkedinfilled.svg": "/static/media/linkedinfilled.1ee6dbdf.svg",
+    "static/media/profile.jpg": "/static/media/profile.93b20f90.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.19ccc7f6.js",
+    "static/js/2.92922ed5.chunk.js",
+    "static/css/main.98dda728.chunk.css",
+    "static/js/main.22f262ab.chunk.js"
+  ]
+}
